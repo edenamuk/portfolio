@@ -15,15 +15,47 @@
             background-color: #121C26;
             color: #FFF;
             font-family: 'Work Sans', sans-serif;
+            cursor: default;
         }
 
+        .container {
+            display: flex;
+            position: relative;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%
+        }
+
+        .title-text {
+            position: relative;
+            background-color: transparent;
+            font-weight: 300;
+            font-size: 2.6rem;
+            letter-spacing: 0.2rem;
+            text-align: center;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .title-text::after {
+            content: "";
+            position: absolute;
+            border-bottom: #FFF solid 3px;
+            width: 3em;
+            height: 120%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        /****** Header ******/
         .header {
-            background: url(images/title_bg.png) no-repeat scroll center;
+            background: url(images/title_bg.png) no-repeat scroll bottom;
             height: 100vh;
             width: 100%;
         }
 
-        .header-content {
+        .header .header-content {
             background-color: transparent;
             font-weight: 700;
             font-size: 3rem;
@@ -34,11 +66,17 @@
             align-items: center;
             justify-content: center;
             height: 100%;
-            cursor: default;
         }
 
-        .container {
-            height: 100%
+        /****** About ******/
+        .about{
+            height: 80vh;
+            width: 100%;
+        }
+        .about p {
+            line-height: 2.6rem;
+            font-size: 1.2rem;
+            padding-left: 2rem;
         }
     </style>
 </head>
@@ -52,7 +90,24 @@
         </div>
     </div>
     <div class="about">
-
+        <div class="container">
+            <div class="title-text">ABOUT</div>
+            <div class="row about-content">
+                <div class="col-md-6 d-flex justify-content-center">
+                    <img class="img-fluid" src="images/about.png" alt="YI-HSUAN">
+                </div>
+                <div class="col-md-6 d-flex align-items-center">
+                    <p>
+                        嗨，我是陳怡璇，<br>
+                        2019年從世新大學數位多媒體設計學系遊戲設計組畢業，<br>
+                        大學做遊戲時同時對程式和美術產生興趣，<br>
+                        在專案中擔任 UI/UX Design，<br>
+                        喜歡觀察和研究動態圖像設計，<br>
+                        目前正朝著此目標邁進。
+                    </p>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="skill">
 
