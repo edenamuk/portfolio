@@ -1,29 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;700&display=swap');
-@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+/* -------------------------------------------------- *\
+    $main.css
+\* -------------------------------------------------- */
+/**
+* $General
+* $Header
+* $About
+* $Project
+* $Side Navbar
+*/
 
-/****** General ******/
-body {
-    background-color: #121C26;
-    color: #FFF;
-    font-family: 'Work Sans', sans-serif;
-    cursor: default;
-}
 
-.container {
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    justify-content: center;
-    height: 100%
-}
 
+/* -------------------------------------------------- *\
+    $General
+\* -------------------------------------------------- */
 .title-text {
     position: relative;
     background-color: transparent;
     font-weight: 300;
     font-size: 2.6rem;
     letter-spacing: 0.2rem;
-    text-align: center;
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
@@ -39,9 +35,13 @@ body {
     transform: translate(-50%, -50%);
 }
 
-/****** Header ******/
+
+
+/* -------------------------------------------------- *\
+    $Header
+\* -------------------------------------------------- */
 #header {
-    background: url(images/title_bg.png) no-repeat scroll bottom;
+    background: url(../images/title_bg.png) no-repeat scroll bottom;
     height: 100vh;
     width: 100%;
 }
@@ -59,9 +59,13 @@ body {
     height: 100%;
 }
 
-/****** About ******/
+
+
+/* -------------------------------------------------- *\
+    $About
+\* -------------------------------------------------- */
 #about {
-    height: 80vh;
+    height: 100vh;
     width: 100%;
 }
 
@@ -71,7 +75,11 @@ body {
     padding-left: 2rem;
 }
 
-/****** Project ******/
+
+
+/* -------------------------------------------------- *\
+    $Project
+\* -------------------------------------------------- */
 #project {
     width: 100%;
     padding-top: 10vh;
@@ -89,6 +97,7 @@ body {
     overflow: hidden;
     position: relative;
     border: none;
+    background-color: #121C26;
 }
 
 .card-img {
@@ -98,11 +107,10 @@ body {
     transform: translate(-50%, -50%);
     width: 100%;
     height: 100%;
-    overflow: hidden;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    transition: width 0.5s, height 0.5s;
+    transition: width 1s, height 1s;
 }
 
 .card-info {
@@ -133,12 +141,19 @@ body {
     opacity: 1;
     bottom: 0;
 }
-
+.card:hover .card-img {
+    width: 105%;
+    height: 105%;
+}
 .card:hover .card-info::after {
     height: 70%;
 }
 
-/****** Side Navbar ******/
+
+
+/* -------------------------------------------------- *\
+    $Side Navbar
+\* -------------------------------------------------- */
 .sideNav {
     position: fixed;
     display: flex;
@@ -198,7 +213,7 @@ body {
 }
 
 .sideNav .sideNav-social a:hover{
-    color: #344353 !important;
+    color: #7C9CBE !important;
 }
 
 .sideNav .brand {
