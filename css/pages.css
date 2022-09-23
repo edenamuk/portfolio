@@ -1,1 +1,46 @@
-@import url("css/base.css");
+.parallax{
+    height: 90vh; 
+    background-image: var(--cover);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.project-info{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    flex-direction: column;
+    margin-bottom: 60px;
+}
+.project-title{
+    background-color: transparent;
+    font-weight: 300;
+    font-size: 2.6rem;
+    letter-spacing: 0.2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.project-title::before {
+    content: "";
+    position: absolute;
+    border-bottom: #FFF solid 3px;
+    width: 80%;
+    height: 150%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.project-title::after{
+    content: var(--tag);
+    position: absolute;
+    top:170%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.2rem;
+}
