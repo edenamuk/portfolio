@@ -9,8 +9,6 @@
 * $Side Navbar
 */
 
-
-
 /* -------------------------------------------------- *\
     $General
 \* -------------------------------------------------- */
@@ -27,15 +25,13 @@
 .title-text::after {
     content: "";
     position: absolute;
-    border-bottom: #FFF solid 3px;
+    border-bottom: #fff solid 3px;
     width: 3em;
     height: 160%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
-
-
 
 /* -------------------------------------------------- *\
     $Header
@@ -50,7 +46,7 @@
     background-color: transparent;
     font-weight: 700;
     font-size: 3rem;
-    color: #121C26;
+    color: #121c26;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -58,8 +54,6 @@
     justify-content: center;
     height: 100%;
 }
-
-
 
 /* -------------------------------------------------- *\
     $About
@@ -74,8 +68,6 @@
     font-size: 1.2rem;
     padding-left: 2rem;
 }
-
-
 
 /* -------------------------------------------------- *\
     $Project
@@ -97,7 +89,7 @@
     overflow: hidden;
     position: relative;
     border: none;
-    background-color: #121C26;
+    background-color: #121c26;
     margin: 20px 0;
 }
 
@@ -124,13 +116,13 @@
     padding: 38px 36px 10px;
     opacity: 0;
     pointer-events: none;
-    transition: opacity 0.8s 0.2s cubic-bezier(0, .5, .54, .99), bottom 0.6s cubic-bezier(0, .5, .54, .99);
+    transition: opacity 0.8s 0.2s cubic-bezier(0, 0.5, 0.54, 0.99), bottom 0.6s cubic-bezier(0, 0.5, 0.54, 0.99);
 }
 
 .card-info::after {
     content: "";
     position: absolute;
-    border-left: #FFF solid 1.6px;
+    border-left: #fff solid 1.6px;
     width: 100%;
     height: 0%;
     bottom: 0;
@@ -150,11 +142,10 @@
     height: 70%;
 }
 
-
-
 /* -------------------------------------------------- *\
     $Side Navbar
 \* -------------------------------------------------- */
+
 .sideNav {
     position: fixed;
     display: flex;
@@ -171,7 +162,6 @@
     animation-duration: 1s;
     animation-delay: 0.6s;
     animation-fill-mode: forwards;
-
 }
 
 .sideNav-scroll {
@@ -201,7 +191,8 @@
     animation-fill-mode: forwards;
 }
 
-.sideNav .sideNav-list a,.sideNav-list i {
+.sideNav .sideNav-list a,
+.sideNav-list i {
     font-size: 2.2rem;
     vertical-align: middle;
 }
@@ -214,8 +205,8 @@
     vertical-align: middle;
 }
 
-.sideNav .sideNav-social a:hover{
-    color: #7C9CBE !important;
+.sideNav .sideNav-social a:hover {
+    color: #7c9cbe !important;
 }
 
 .sideNav .brand {
@@ -233,11 +224,83 @@
     top: 50%;
     transform: translate(-50%, -50%);
 }
-@keyframes nav-slideIn{
-    0%{left:-200px}
-    100%{left: 0;}
+@keyframes nav-slideIn {
+    0% {
+        left: -200px;
+    }
+    100% {
+        left: 0;
+    }
 }
-@keyframes nav-fadeIn{
-    0%{opacity: 0;}
-    100%{opacity: 1;}
+@keyframes nav-fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.topNav {
+    position: fixed;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    top: 0;
+    left: 0;
+    height: 10vh;
+    width: 100%;
+    background-color: azure;
+    z-index: 10;
+}
+.topNav a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.3rem;
+}
+.topNav .topNav-list {
+    position: absolute;
+    display: flex;
+    top: 10vh;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    flex-direction: column;
+    width: 100%;
+    list-style: none;
+    text-align: center;
+    max-height: 0;
+    overflow: hidden;
+    transition: .5s;
+}
+.topNav-list a{
+    display: block;
+    font-size: 1.0rem;
+    font-weight: 500;
+    line-height: 3;
+}
+.topNav-list a:hover{
+    background-color: rgba(255,255,255,0.5);
+    color: #FFF;
+}
+.topNav input {
+    display: none;
+}
+.topNav label {
+    font-size: 1.6rem;
+    color: #000;
+}
+.topNav input:checked ~.topNav-list{
+    max-height: 150px;
+}
+
+
+@media screen and (max-width:576px) {
+
+    .topNav{
+        display: flex;
+    }
+    .sideNav{
+        display: none;
+    }
 }

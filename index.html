@@ -1,125 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>YiHsuan's Portfolio</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+            crossorigin="anonymous"
+        />
+        <script src="https://kit.fontawesome.com/78f1dafb7b.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="css/base.css" />
+        <link rel="stylesheet" href="css/main.css" />
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YiHsuan's Portfolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/78f1dafb7b.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/main.css">
-</head>
+    <!-- TO DO -->
+    <!-- 封面parallax -->
 
-<!-- TO DO -->
-<!-- 封面parallax -->
+    <body>
+        <nav>
+            <div class="topNav">
+                <a href="index.html">YiHsuan's Portfolio</a>
+                <label for="sideNav-toggle"><i class="fa-solid fa-bars"></i></label>
+                <input id="sideNav-toggle" type="checkbox" />
+                <ul class="topNav-list">
+                    <li>
+                        <a href="index.html/#header">HOME</a>
+                    </li>
+                    <li>
+                        <a href="index.html/#about">ABOUT</a>
+                    </li>
+                    <li>
+                        <a href="index.html/#project">PROJECT</a>
+                    </li>
+                </ul>
+            </div>
 
-<body>
-    <nav class="sideNav">
-        <a href="index.html" class="mt-2">
-            <span class="brand">YiHsuan's</span>
-            <span class="brand">Portfolio</span>
-        </a>
-        <ul class="sideNav-list my-auto">
-            <li><a href="#header"><i class="bi bi-house"></i><span>HOME</span></a></li>
-            <li><a href="#about"><i class="bi bi-person-circle"></i><span>ABOUT</span></a></li>
-            <li><a href="#project"><i class="bi bi-grid"></i><span>PROJECT</span></a></li>
-        </ul>
-        <ul class="sideNav-social mb-2">
-            <li><a href="#"><i class="bi bi-envelope"></i></a></li>
-            <li><a href="#"> <i class="bi bi-github"></i></a></li>
-            <li><a href="#"><i class="bi bi-behance"></i></a></li>
-            <li><a href="#"><i class="bi bi-facebook"></i></a></li>
-        </ul>
-        <div class="sideNav-scroll"></div>
-    </nav>
-    <div id="header">
-        <div class="container">
-            <div class="header-content">
-                <div>I'M YI-HSUAN CHEN.</div>
+            <div class="sideNav">
+                <a href="index.html" class="mt-2">
+                    <span class="brand">YiHsuan's</span>
+                    <span class="brand">Portfolio</span>
+                </a>
+
+                <ul class="sideNav-list my-auto">
+                    <li>
+                        <a href="#header"><i class="bi bi-house"></i><span>HOME</span></a>
+                    </li>
+                    <li>
+                        <a href="#about"><i class="bi bi-person-circle"></i><span>ABOUT</span></a>
+                    </li>
+                    <li>
+                        <a href="#project"><i class="bi bi-grid"></i><span>PROJECT</span></a>
+                    </li>
+                </ul>
+                <ul class="sideNav-social mb-2">
+                    <li>
+                        <a href="#"><i class="bi bi-envelope"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"> <i class="bi bi-github"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="bi bi-behance"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                    </li>
+                </ul>
+                <div class="sideNav-scroll"></div>
+            </div>
+        </nav>
+        <div id="header">
+            <div class="container">
+                <div class="header-content">
+                    <div>I'M YI-HSUAN CHEN.</div>
+                </div>
             </div>
         </div>
-    </div>
-    <div id="about">
-        <div class="container">
-            <div class="title-text text-center">
-                ABOUT
-            </div>
-            <div class="row">
-                <div class="col-md-6 d-flex justify-content-center">
-                    <img class="img-fluid" src="images/about.png" alt="YI-HSUAN">
-                </div>
-                <div class="col-md-6 d-flex align-items-center">
-                    <p>
-                        嗨，我是陳怡璇，<br>
-                        2019年從世新大學數位多媒體設計學系遊戲設計組畢業，<br>
-                        大學做遊戲時同時對程式和美術產生興趣，<br>
-                        在專案中擔任 UI/UX Design，<br>
-                        喜歡觀察和研究動態圖像設計，<br>
-                        目前正朝著此目標邁進。
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="project">
-        <div class="container">
-            <div class="title-text text-center">PROJECT</div>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card">
-                        <a href="#">
-                            <div class="card-img" style="background-image: url(images/title_bg.png);"></div>
-                        </a>
-                        <div class="card-info">
-                            <h3>Logo Design</h3>
-                            <h6>Motion Graphic</h6>
-                        </div>
+        <div id="about">
+            <div class="container">
+                <div class="title-text text-center">ABOUT</div>
+                <div class="row">
+                    <div class="col-md-6 d-flex justify-content-center">
+                        <img class="img-fluid" src="images/about.png" alt="YI-HSUAN" />
                     </div>
-                </div>
-                <div class="col-md-8">
-                    <div class="card">
-                        <a href="#">
-                            <div class="card-img" style="background-image: url(images/title_bg.png);"></div>
-                        </a>
-                        <div class="card-info">
-                            <h3>Logo Design</h3>
-                            <h6>Motion Graphic</h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-8">
-                    <div class="card">
-                        <a href="#">
-                            <div class="card-img" style="background-image: url(images/title_bg.png);"></div>
-                        </a>
-                        <div class="card-info">
-                            <h3>Logo Design</h3>
-                            <h6>Motion Graphic</h6>
-                        </div>
+                    <div class="col-md-6 d-flex align-items-center">
+                        <p>
+                            嗨，我是陳怡璇，<br />
+                            2019年從世新大學數位多媒體設計學系遊戲設計組畢業，<br />
+                            大學做遊戲時同時對程式和美術產生興趣，<br />
+                            在專案中擔任 UI/UX Design，<br />
+                            喜歡觀察和研究動態圖像設計，<br />
+                            目前正朝著此目標邁進。
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
 
-    </div>
-
-    <footer class="footer text-center">
-        <div class="container">
-            <div>Copyright © 2022 Yi-Hsuan Chen. All rights reserved.</div>
+        <div id="project">
+            <div class="container">
+                <div class="title-text text-center">PROJECT</div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <a href="#">
+                                <div class="card-img" style="background-image: url(images/title_bg.png)"></div>
+                            </a>
+                            <div class="card-info">
+                                <h3>Logo Design</h3>
+                                <h6>Motion Graphic</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card">
+                            <a href="#">
+                                <div class="card-img" style="background-image: url(images/title_bg.png)"></div>
+                            </a>
+                            <div class="card-info">
+                                <h3>Logo Design</h3>
+                                <h6>Motion Graphic</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card">
+                            <a href="#">
+                                <div class="card-img" style="background-image: url(images/title_bg.png)"></div>
+                            </a>
+                            <div class="card-info">
+                                <h3>Logo Design</h3>
+                                <h6>Motion Graphic</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        </footerid=>
+
+        <footer class="footer text-center">
+            <div class="container">
+                <div>Copyright © 2022 Yi-Hsuan Chen. All rights reserved.</div>
+            </div>
+        </footer>
 
         <!-- JavaScript -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+            crossorigin="anonymous"
+        ></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script src="js/sideNav.js"></script>
 
-        <script>
-
-        </script>
-</body>
-
+        <script></script>
+    </body>
 </html>

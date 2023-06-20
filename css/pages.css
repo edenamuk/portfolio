@@ -12,13 +12,14 @@
     position: relative;
     justify-content: center;
     align-items: center;
-    height: 30vh;
+    height: 20vh;
     flex-direction: column;
-    margin-bottom: 60px;
+    margin: 30px 0;
 }
-.project-title{
+
+.project-info-title{
     background-color: transparent;
-    font-weight: 300;
+    font-weight: 700;
     font-size: 2.6rem;
     letter-spacing: 0.2rem;
     margin-top: 2rem;
@@ -26,7 +27,7 @@
     position: relative;
 }
 
-.project-title::before {
+.project-info-title::before {
     content: "";
     position: absolute;
     border-bottom: #FFF solid 3px;
@@ -36,11 +37,27 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.project-title::after{
+.project-info-title::after{
     content: var(--tag);
     position: absolute;
     top:170%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 1.2rem;
+}
+
+.project-detail{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 10vh;
+    margin: 30px auto 120px auto;
+    font-weight: 300;
+    font-size: 1.2rem;
+}
+
+.project-detail :first-child{
+    font-size: 2.6rem;
 }
